@@ -1,6 +1,10 @@
 <div class="beer">
-    <img src="{{ image_url }}" />
-    <h2>{{ name }}</h2>
-    <p>{{ description }}</p>
-    <span>{{ tagline }}</span>
+    <div class="box-img">
+        <a href="https://api.punkapi.com/v2/beers/{{ id }}" target="_blank"><img src="{{ image_url }}" /></a>
+    </div>
+    <div class="box-copy">
+        <h2>{{ name }}</h2>
+        <p>{{ description }}</p>
+        <span>{{ tagline }}</span>
+    </div>
 </div>

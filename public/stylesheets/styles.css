@@ -52,11 +52,76 @@ a {
     margin: 40px;
 }
 
-.beer img {
-    height: 200px;
-    object-fit: cover;
+.container {
+    display: flex; 
 }
 
-.beer span {
+.container span {
     font-style: italic;
+}
+
+footer {
+    background-color:#0a2c42;
+    color: #f7f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-size: 0.8rem;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.beers {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.beer {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin: 1rem;
+    align-items: center;
+    background-color: bisque;
+}
+
+.box-img {
+    width: auto;
+    padding-right: 50px;
+}
+
+.beer img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+.beer .box-copy {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.beer .box-copy h2 {
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+}
+
+.box-img a{
+    background-color: transparent;
+}
+
+.extra {
+    margin: 1rem;
+    width: 400px;
+}
+
+main {
+    min-height: 800px;
 }
